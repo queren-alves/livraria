@@ -118,7 +118,17 @@ Caneca --> Produto
 
 <br />
 
-## 5. Requisitos
+## 5. Implementações Futuras
+
+<br />
+
+Abaixo estão algumas das funcionalidades que serão implementadas no futuro:
+
+- [ ]  **Simulador de Carrinho de Compras**: Função para simular a compra de produtos.
+
+<br />
+
+## 6. Requisitos
 
 <br />
 
@@ -129,11 +139,11 @@ Para executar os códigos localmente, você precisará de:
 
 <br />
 
-## 6. Como Executar o projeto no Eclipse/STS
+## 7. Como Executar o projeto no Eclipse/STS
 
 <br />
 
-### 6.1. Importando o Projeto
+### 7.1. Importando o Projeto
 
 1. Clone o repositório do Projeto [Livraria](https://github.com/queren-alves/livraria) dentro da pasta do *Workspace* do Eclipse/STS
 
@@ -150,7 +160,7 @@ git clone https://github.com/queren-alves/livraria.git
 
 <br />
 
-### 6.2. Executando o projeto
+### 7.2. Executando o projeto
 
 1. Na guia **Package Explorer**, localize o Projeto Conta Bancária
 2. Abra a **Classe Menu**
@@ -160,7 +170,7 @@ git clone https://github.com/queren-alves/livraria.git
 
 <br />
 
-## 7. Contribuição
+## 8. Contribuição
 
 <br />
 
@@ -172,7 +182,7 @@ Este repositório é parte de um projeto educacional, mas contribuições são s
 
 <br />
 
-##  8. Contato
+##  9. Contato
 
 <br />
 
