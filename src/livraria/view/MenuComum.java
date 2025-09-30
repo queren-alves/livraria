@@ -44,7 +44,7 @@ public class MenuComum {
     			System.out.println("\t╭─────────────────────────╮"
 								+"\n\t│  Adicionar no carrinho  │"
 								+"\n\t╰─────────────────────────╯");
-    			
+    			sc.nextLine();
     			keyPress();
     			break;
     		case 0:

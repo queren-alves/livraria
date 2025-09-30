@@ -11,5 +11,4 @@ public class Menu {
 		MenuComum.init();
 		MenuInicial.mainMenu();
 	}
-	
 }
