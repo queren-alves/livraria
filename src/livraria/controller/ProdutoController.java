@@ -26,10 +26,6 @@ public class ProdutoController implements ProdutoRepository{
 	@Override
 	public void register(Produto produto) {
 		produtos.add(produto);
-		System.out.println("\t╭─────────────────────────────────╮"
-				   		+"\n\t│ Produto cadastrado com sucesso. │"
-				   		+"\n\t╰─────────────────────────────────╯");
-		
 	}
 
 	@Override

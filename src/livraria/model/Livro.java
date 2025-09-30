@@ -2,7 +2,7 @@ package livraria.model;
 
 public class Livro extends Produto{
 	
-	String gender, author, publisher;
+	private String gender, author, publisher;
 	
 	public Livro(int id, int stock, int category, float price, String name, String gender, String author, String publisher) {
 		super(id, stock, category, price, name);

@@ -2,9 +2,9 @@ package livraria.model;
 
 public abstract class Produto {
 	
-	int id, stock, category;
-	float price;
-	String name;
+	private int id, stock, category;
+	private float price;
+	private String name;
 	
 	public Produto(int id, int stock, int category, float price, String name) {
 		this.id = id;

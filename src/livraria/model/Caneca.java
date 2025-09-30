@@ -2,7 +2,7 @@ package livraria.model;
 
 public class Caneca extends Produto {
 
-	String color;
+	private String color;
 
 	public Caneca(int id, int stock, int category, float price, String name, String color) {
 		super(id, stock, category, price, name);
