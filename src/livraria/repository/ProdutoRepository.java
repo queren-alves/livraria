@@ -9,6 +9,5 @@ public interface ProdutoRepository {
 	void update(Produto produto);
 	void searchById(int id);
 	void delete(int id);
-	void searchByTitle(String title);
 	
 }
