@@ -2,6 +2,7 @@ package livraria.view;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class MenuInicial {
@@ -19,10 +20,9 @@ public class MenuInicial {
 	}
 	
 	public static void mainMenu() {
-		header();
 		boolean start = true;
         while(start) {
-        	
+        	header();
         	System.out.println("\t╭─────────────────────────────────────────────────╮"
 							+"\n\t│                  BEM VINDO(A)                   │"
 							+"\n\t├─────────────────────────────────────────────────┤"
@@ -42,17 +42,7 @@ public class MenuInicial {
 
             switch(op) {
     		case 1:
-    			System.out.println("Digite a senha:");
-    			sc.skip("\\R");
-    			int password = sc.nextInt();
-    			if (password == 123) {
-    				MenuAdmin.mainMenu();
-    			}
-    			else
-    				System.out.println("Senha incorreta.");
-    			sc.nextLine();
-				keyPress();
-    			
+    			login();
     			break;	
     		case 2:
     			MenuComum.mainMenu();
@@ -68,6 +58,26 @@ public class MenuInicial {
         }
         System.out.println(end());
         sc.close();
+	}
+	
+	private static void login() {
+		try {
+			System.out.print("Digite a senha: ");
+			sc.skip("\\R");
+			int password = sc.nextInt();
+			if (password == 123) {
+				MenuAdmin.mainMenu();
+			}
+			else
+				System.out.println("\t╭──────────────────╮"
+								+"\n\t│ Senha incorreta. │"
+								+"\n\t╰──────────────────╯");
+		} catch (InputMismatchException e) {
+			System.out.println("\t╭──────────────────╮"
+							+"\n\t│ Senha incorreta. │"
+							+"\n\t╰──────────────────╯");
+			sc.nextLine();
+		}
 	}
 	
 	public static String end() {

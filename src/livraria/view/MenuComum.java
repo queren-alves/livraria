@@ -1,5 +1,7 @@
 package livraria.view;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 import livraria.controller.ProdutoController;
@@ -11,10 +13,21 @@ public class MenuComum {
 	private static final Scanner sc = new Scanner(System.in);
 	private static final ProdutoController produtoController = new ProdutoController();
 	
+	public static void header() {
+		LocalDateTime now = LocalDateTime.now();
+        String time = now.format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss"));
+        System.out.println("\t╭─────────────────────────────────────────────────╮"
+        				+"\n\t│         ─────── Books n' Coffee ───────         │"
+        				+"\n\t│     Onde um bom livro encontra um bom café      │"
+        				+"\n\t│        Data/Hora: "+ time + "           │"
+        				+"\n\t╰─────────────────────────────────────────────────╯");
+	}
+	
 	public static void mainMenu() {
 		boolean start = true;
         while(start) {
-        	
+        
+        	header();
 		System.out.println("\t╭─────────────────────────────────────────────────╮"
 						+"\n\t│           ─────── MENU CLIENTE───────           │"
 						+"\n\t├─────────────────────────────────────────────────┤"
